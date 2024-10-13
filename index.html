@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navb">
+    <div class="container w-75 m-auto">
+      <a class="navbar-brand" href="#">
+        <img src="https://routeweather.netlify.app/images/logo.png" alt="Logo" width="" height="" class="align-text-top">
+        <div class="caption d-inline-block ">
+          <h1 class="site-title">Weather</h1>
+          <small class="site-description">tagline goes here</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link links text-white px-4" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links  px-4" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links  px-4" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links  px-4" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links  px-4" href="#">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="home"  class="container-lg">
+    <div id="search">
+      <input type="search" id="input-country" class="form-control w-100 m-auto sear " placeholder="ENTER YOUR LOCATION">
+      <input type="button" value="search" id="submit" class="d-block ser btn">
+    </div>
+  </div>
+  <div class="display-data container-lg w-75 m-auto ">
+    <div class="row">
+      <div class="first-day col-md-4 rounded-3 my-2">
+        <div class="data text-center border-bottom p-2 fs-5  text-light">
+              TODAY
+        </div>
+        <div id="countrys" class="p-2 fs-5 fw-semibold text-light">cairo</div>
+        <div id="degree-num"class="p-2 fs-1 fw-bolder text-light">77</div>
+        <img id="con-day" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt width="90">
+        <div id="stat-one"class="p-2 fs-6 fw-semibold ">sunny</div>
+        <div class="my-3">
+          <span class="m-3 p-1  fs-6  text-light" ><img src="https://routeweather.netlify.app/images/icon-compass.png" alt>20%</span>
+          <span class="m-3 p-1  fs-6  text-light" ><img src="https://routeweather.netlify.app/images/icon-wind.png" alt>18km/h</span>
+          <span class="m-3 p-1  fs-6  text-light"><img src="https://routeweather.netlify.app/images/icon-compass.png" alt>East</span>
+        </div>
+    
+      </div>
+      <div class="secondry-day col-md-4 text-center my-2 rounded-3">
+        <div id="num-second-day"  class="border-bottom p-2 fs-5  text-light">TOMORROW</div>
+        <div id="icon-scound-day"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt width="90"></div>
+        <div id="hight-deg"class="p-2 fs-1 fw-bolder text-light">25</div>
+        <div id="low-deg"class="p-2 fs-4 fw-bolder ">30</div>
+        <div id="stat-two"class="p-2 fs-6 fw-bolder ">sunny</div>
+      </div>
+      <div class="third-day col-md-4 text-center my-2 rounded-3">
+        <div id="num-third-day" class="border-bottom p-2 fs-5  text-light">AFTER TOMORROW</div>
+        <div id="icon-third-day"><img  src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt width="90"></div>
+        <div id="hight-third"class="p-2 fs-1 fw-bold text-light">232</div>
+        <div id="low-third"class="p-2 fs-4 fw-bold ">23</div>
+        <div id="stat-three"class="p-2 fs-6 fw-bold ">sunny</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

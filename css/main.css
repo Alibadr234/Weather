@@ -1,0 +1,70 @@
+.caption{
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0px;
+}
+body{
+    background-color: #262936;
+    background-image: url(	https://routeweather.netlify.app/images/banner.png);
+    background-repeat: no-repeat;
+}
+.caption h1{
+    font-size: 1.1428571429em;
+    color: white;
+}
+.caption small{
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+}
+.navb{
+    background-color: #262936;
+    font-size: 14px;
+}
+.links{
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #009ad8;
+    color: #009ad8;
+    display: inline-block;
+    margin-inline: 10px;
+}
+#home{
+    position: relative;
+}
+#home{
+    margin-block: 90px;
+}
+#home .sear{
+    background-color: #4a4e5f;
+    border: none;
+    color: white;
+}
+#home .ser{
+    position: absolute;
+    bottom: 0px;
+    right: 12px;
+    padding-inline: 20px;
+    background-color: #009ad8;
+    color: white;
+}
+.first-day{
+    background-color: #4a4e5f;
+}
+.secondry-day{
+    background-color: #bfc1c8;
+}
+.third-day{
+    background-color: #4a4e5f;
+}
+#stat-three ,#stat-two,#stat-one{
+    color: #009ad8;
+}
+#low-third{
+    color: #bfc1c8;
+}
+#low-deg{
+    color: #4a4e5f;
+}
