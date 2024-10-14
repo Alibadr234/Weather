@@ -46,7 +46,7 @@ function seachData(dataone){
     DegreeNum.innerHTML = dataone.current.temp_c +"  C";
     StatOne.innerHTML = dataone.current.condition.text;
     // IconDay.setAttribute("src", dataone.current.condition.icon);
-    numDay=new Date(dataone.current.last_updated)
+    // numDay=new Date(dataone.current.last_updated)
     hightDeg.innerHTML= dataone.forecast.forecastday[1].day.maxtemp_c+"  C"
     lowDeg.innerHTML= dataone.forecast.forecastday[1].day.mintemp_c+"  C"
     statTwo.innerHTML=dataone.forecast.forecastday[1].day.condition.text;
@@ -57,7 +57,5 @@ function seachData(dataone){
     statThree.innerHTML=dataone.forecast.forecastday[2].day.condition.text
     iconThirdDay.setAttribute("src",dataone.forecast.forecastday[2].day.condition.icon)
     numThirdDay=new Date(dataone.forecast.forecastday[2].day)
-
-
 
 }
