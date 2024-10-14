@@ -34,7 +34,7 @@ let data=[];
 async function getDay(value = "cairo"){
     let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=7117a750550d4cd293e92921242609&q=${value}&days=3`)
     let fainalresponse =await response.json();
-    let data = fainalresponse.forecast;
+     data = fainalresponse.forecast;
     console.log(data)
     console.log(fainalresponse)
     seachData(fainalresponse)
