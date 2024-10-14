@@ -32,7 +32,7 @@ let statThree = document.getElementById("stat-three")
 
 let data=[];
 async function getDay(value = "cairo"){
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=7117a750550d4cd293e92921242609&q=${value}&days=3`)
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7117a750550d4cd293e92921242609&q=${value}&days=3`)
     let fainalresponse =await response.json();
      data = fainalresponse.forecast;
     console.log(data)
@@ -46,7 +46,7 @@ function seachData(dataone){
     DegreeNum.innerHTML = dataone.current.temp_c +"  C";
     StatOne.innerHTML = dataone.current.condition.text;
     // IconDay.setAttribute("src", dataone.current.condition.icon);
-    // numDay=new Date(dataone.current.last_updated)
+    numDay=new Date(dataone.current.last_updated)
     hightDeg.innerHTML= dataone.forecast.forecastday[1].day.maxtemp_c+"  C"
     lowDeg.innerHTML= dataone.forecast.forecastday[1].day.mintemp_c+"  C"
     statTwo.innerHTML=dataone.forecast.forecastday[1].day.condition.text;
